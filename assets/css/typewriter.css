@@ -1,0 +1,2384 @@
+@charset "UTF-8";
+body {
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  width: 100%;
+}
+
+.input-wrapper {
+  display: block;
+  font-family: monospace;
+  font-size: 125%;
+  width: 50%;
+}
+.input-wrapper > input,
+.input-wrapper > .placeholder {
+  display: block;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+}
+.input-wrapper > .placeholder {
+  pointer-events: none;
+}
+.input-wrapper > .placeholder::before {
+  content: "​";
+  content: "​"/"hello hello hello, i'm vani sachdev.";
+  alt: "hello hello hello, i'm vani sachdev.";
+  white-space: break-spaces;
+  will-change: content;
+  -webkit-animation: typed-0 19.92s linear 1s infinite forwards;
+          animation: typed-0 19.92s linear 1s infinite forwards;
+}
+.input-wrapper > .placeholder::after {
+  content: "​";
+  position: relative;
+  display: inline-block;
+  padding-right: 2px;
+  border-right: 2px solid currentColor;
+  white-space: nowrap;
+  -webkit-animation: typed-0-caret 0.75s linear 1s infinite forwards;
+          animation: typed-0-caret 0.75s linear 1s infinite forwards;
+}
+@-webkit-keyframes typed-0 {
+  0%, 0.3336720214% {
+    content: "​h";
+    content: "​h"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  0.3346720214%, 0.6683440428% {
+    content: "​he";
+    content: "​he"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  0.6693440428%, 1.0030160643% {
+    content: "​hel";
+    content: "​hel"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  1.0040160643%, 1.3376880857% {
+    content: "​hell";
+    content: "​hell"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  1.3386880857%, 1.6723601071% {
+    content: "​hello";
+    content: "​hello"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  1.6733601071%, 2.0070321285% {
+    content: "​hello ";
+    content: "​hello "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  2.0080321285%, 2.3417041499% {
+    content: "​hello h";
+    content: "​hello h"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  2.3427041499%, 2.6763761714% {
+    content: "​hello he";
+    content: "​hello he"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  2.6773761714%, 3.0110481928% {
+    content: "​hello hel";
+    content: "​hello hel"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  3.0120481928%, 3.3457202142% {
+    content: "​hello hell";
+    content: "​hello hell"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  3.3467202142%, 3.6803922356% {
+    content: "​hello hello";
+    content: "​hello hello"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  3.6813922356%, 4.015064257% {
+    content: "​hello hello ";
+    content: "​hello hello "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  4.016064257%, 4.3497362784% {
+    content: "​hello hello h";
+    content: "​hello hello h"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  4.3507362784%, 4.6844082999% {
+    content: "​hello hello he";
+    content: "​hello hello he"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  4.6854082999%, 5.0190803213% {
+    content: "​hello hello hel";
+    content: "​hello hello hel"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  5.0200803213%, 5.3537523427% {
+    content: "​hello hello hell";
+    content: "​hello hello hell"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  5.3547523427%, 5.6884243641% {
+    content: "​hello hello hello";
+    content: "​hello hello hello"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  5.6894243641%, 6.0230963855% {
+    content: "​hello hello hello,";
+    content: "​hello hello hello,"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  6.0240963855%, 6.357768407% {
+    content: "​hello hello hello, ";
+    content: "​hello hello hello, "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  6.358768407%, 6.6924404284% {
+    content: "​hello hello hello, i";
+    content: "​hello hello hello, i"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  6.6934404284%, 7.0271124498% {
+    content: "​hello hello hello, i'";
+    content: "​hello hello hello, i'"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  7.0281124498%, 7.3617844712% {
+    content: "​hello hello hello, i'm";
+    content: "​hello hello hello, i'm"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  7.3627844712%, 7.6964564926% {
+    content: "​hello hello hello, i'm ";
+    content: "​hello hello hello, i'm "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  7.6974564926%, 8.0311285141% {
+    content: "​hello hello hello, i'm v";
+    content: "​hello hello hello, i'm v"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  8.0321285141%, 8.3658005355% {
+    content: "​hello hello hello, i'm va";
+    content: "​hello hello hello, i'm va"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  8.3668005355%, 8.7004725569% {
+    content: "​hello hello hello, i'm van";
+    content: "​hello hello hello, i'm van"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  8.7014725569%, 9.0351445783% {
+    content: "​hello hello hello, i'm vani";
+    content: "​hello hello hello, i'm vani"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  9.0361445783%, 9.3698165997% {
+    content: "​hello hello hello, i'm vani ";
+    content: "​hello hello hello, i'm vani "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  9.3708165997%, 9.7044886212% {
+    content: "​hello hello hello, i'm vani s";
+    content: "​hello hello hello, i'm vani s"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  9.7054886212%, 10.0391606426% {
+    content: "​hello hello hello, i'm vani sa";
+    content: "​hello hello hello, i'm vani sa"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  10.0401606426%, 10.373832664% {
+    content: "​hello hello hello, i'm vani sac";
+    content: "​hello hello hello, i'm vani sac"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  10.374832664%, 10.7085046854% {
+    content: "​hello hello hello, i'm vani sach";
+    content: "​hello hello hello, i'm vani sach"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  10.7095046854%, 11.0431767068% {
+    content: "​hello hello hello, i'm vani sachd";
+    content: "​hello hello hello, i'm vani sachd"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  11.0441767068%, 11.3778487282% {
+    content: "​hello hello hello, i'm vani sachde";
+    content: "​hello hello hello, i'm vani sachde"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  11.3788487282%, 11.7125207497% {
+    content: "​hello hello hello, i'm vani sachdev";
+    content: "​hello hello hello, i'm vani sachdev"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  11.7135207497%, 19.0083708166% {
+    content: "​hello hello hello, i'm vani sachdev.";
+    content: "​hello hello hello, i'm vani sachdev."/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  19.0093708166%, 19.2761084337% {
+    content: "​hello hello hello, i'm vani sachdev";
+    content: "​hello hello hello, i'm vani sachdev"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  19.2771084337%, 19.5438460509% {
+    content: "​hello hello hello, i'm vani sachde";
+    content: "​hello hello hello, i'm vani sachde"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  19.5448460509%, 19.811583668% {
+    content: "​hello hello hello, i'm vani sachd";
+    content: "​hello hello hello, i'm vani sachd"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  19.812583668%, 20.0793212851% {
+    content: "​hello hello hello, i'm vani sach";
+    content: "​hello hello hello, i'm vani sach"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  20.0803212851%, 20.3470589023% {
+    content: "​hello hello hello, i'm vani sac";
+    content: "​hello hello hello, i'm vani sac"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  20.3480589023%, 20.6147965194% {
+    content: "​hello hello hello, i'm vani sa";
+    content: "​hello hello hello, i'm vani sa"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  20.6157965194%, 20.8825341365% {
+    content: "​hello hello hello, i'm vani s";
+    content: "​hello hello hello, i'm vani s"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  20.8835341365%, 21.1502717537% {
+    content: "​hello hello hello, i'm vani ";
+    content: "​hello hello hello, i'm vani "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  21.1512717537%, 21.4180093708% {
+    content: "​hello hello hello, i'm vani";
+    content: "​hello hello hello, i'm vani"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  21.4190093708%, 21.685746988% {
+    content: "​hello hello hello, i'm van";
+    content: "​hello hello hello, i'm van"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  21.686746988%, 21.9534846051% {
+    content: "​hello hello hello, i'm va";
+    content: "​hello hello hello, i'm va"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  21.9544846051%, 22.2212222222% {
+    content: "​hello hello hello, i'm v";
+    content: "​hello hello hello, i'm v"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  22.2222222222%, 22.4889598394% {
+    content: "​hello hello hello, i'm ";
+    content: "​hello hello hello, i'm "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  22.4899598394%, 22.7566974565% {
+    content: "​hello hello hello, i'm";
+    content: "​hello hello hello, i'm"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  22.7576974565%, 23.0244350736% {
+    content: "​hello hello hello, i'";
+    content: "​hello hello hello, i'"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  23.0254350736%, 23.2921726908% {
+    content: "​hello hello hello, i";
+    content: "​hello hello hello, i"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  23.2931726908%, 23.5599103079% {
+    content: "​hello hello hello, ";
+    content: "​hello hello hello, "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  23.5609103079%, 23.827647925% {
+    content: "​hello hello hello,";
+    content: "​hello hello hello,"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  23.828647925%, 24.0953855422% {
+    content: "​hello hello hello";
+    content: "​hello hello hello"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  24.0963855422%, 24.3631231593% {
+    content: "​hello hello hell";
+    content: "​hello hello hell"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  24.3641231593%, 24.6308607764% {
+    content: "​hello hello hel";
+    content: "​hello hello hel"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  24.6318607764%, 24.8985983936% {
+    content: "​hello hello he";
+    content: "​hello hello he"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  24.8995983936%, 25.1663360107% {
+    content: "​hello hello h";
+    content: "​hello hello h"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  25.1673360107%, 25.4340736278% {
+    content: "​hello hello ";
+    content: "​hello hello "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  25.4350736278%, 25.701811245% {
+    content: "​hello hello";
+    content: "​hello hello"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  25.702811245%, 25.9695488621% {
+    content: "​hello hell";
+    content: "​hello hell"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  25.9705488621%, 26.2372864793% {
+    content: "​hello hel";
+    content: "​hello hel"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  26.2382864793%, 26.5050240964% {
+    content: "​hello he";
+    content: "​hello he"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  26.5060240964%, 26.7727617135% {
+    content: "​hello h";
+    content: "​hello h"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  26.7737617135%, 27.0404993307% {
+    content: "​hello ";
+    content: "​hello "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  27.0414993307%, 27.3082369478% {
+    content: "​hello";
+    content: "​hello"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  27.3092369478%, 27.5759745649% {
+    content: "​hell";
+    content: "​hell"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  27.5769745649%, 27.8437121821% {
+    content: "​hel";
+    content: "​hel"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  27.8447121821%, 28.1114497992% {
+    content: "​he";
+    content: "​he"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  28.1124497992%, 28.3791874163% {
+    content: "​h";
+    content: "​h"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  28.3801874163%, 31.7259076305% {
+    content: "​";
+    content: "​"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  31.7269076305%, 32.0605796519% {
+    content: "​i";
+    content: "​i"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  32.0615796519%, 32.3952516734% {
+    content: "​i'";
+    content: "​i'"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  32.3962516734%, 32.7299236948% {
+    content: "​i'm";
+    content: "​i'm"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  32.7309236948%, 33.0645957162% {
+    content: "​i'm ";
+    content: "​i'm "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  33.0655957162%, 33.3992677376% {
+    content: "​i'm a";
+    content: "​i'm a"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  33.4002677376%, 33.733939759% {
+    content: "​i'm a ";
+    content: "​i'm a "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  33.734939759%, 34.0686117805% {
+    content: "​i'm a c";
+    content: "​i'm a c"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  34.0696117805%, 34.4032838019% {
+    content: "​i'm a cs";
+    content: "​i'm a cs"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  34.4042838019%, 34.7379558233% {
+    content: "​i'm a cs ";
+    content: "​i'm a cs "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  34.7389558233%, 35.0726278447% {
+    content: "​i'm a cs m";
+    content: "​i'm a cs m"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  35.0736278447%, 35.4072998661% {
+    content: "​i'm a cs ma";
+    content: "​i'm a cs ma"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  35.4082998661%, 35.7419718876% {
+    content: "​i'm a cs maj";
+    content: "​i'm a cs maj"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  35.7429718876%, 36.076643909% {
+    content: "​i'm a cs majo";
+    content: "​i'm a cs majo"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  36.077643909%, 36.4113159304% {
+    content: "​i'm a cs major";
+    content: "​i'm a cs major"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  36.4123159304%, 36.7459879518% {
+    content: "​i'm a cs major ";
+    content: "​i'm a cs major "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  36.7469879518%, 37.0806599732% {
+    content: "​i'm a cs major @";
+    content: "​i'm a cs major @"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  37.0816599732%, 37.4153319946% {
+    content: "​i'm a cs major @ ";
+    content: "​i'm a cs major @ "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  37.4163319946%, 37.7500040161% {
+    content: "​i'm a cs major @ m";
+    content: "​i'm a cs major @ m"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  37.7510040161%, 38.0846760375% {
+    content: "​i'm a cs major @ mu";
+    content: "​i'm a cs major @ mu"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  38.0856760375%, 38.4193480589% {
+    content: "​i'm a cs major @ mud";
+    content: "​i'm a cs major @ mud"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  38.4203480589%, 38.7540200803% {
+    content: "​i'm a cs major @ mudd";
+    content: "​i'm a cs major @ mudd"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  38.7550200803%, 39.0886921017% {
+    content: "​i'm a cs major @ mudd ";
+    content: "​i'm a cs major @ mudd "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  39.0896921017%, 39.4233641232% {
+    content: "​i'm a cs major @ mudd w";
+    content: "​i'm a cs major @ mudd w"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  39.4243641232%, 39.7580361446% {
+    content: "​i'm a cs major @ mudd wh";
+    content: "​i'm a cs major @ mudd wh"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  39.7590361446%, 40.092708166% {
+    content: "​i'm a cs major @ mudd who";
+    content: "​i'm a cs major @ mudd who"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  40.093708166%, 40.4273801874% {
+    content: "​i'm a cs major @ mudd who ";
+    content: "​i'm a cs major @ mudd who "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  40.4283801874%, 40.7620522088% {
+    content: "​i'm a cs major @ mudd who l";
+    content: "​i'm a cs major @ mudd who l"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  40.7630522088%, 41.0967242303% {
+    content: "​i'm a cs major @ mudd who li";
+    content: "​i'm a cs major @ mudd who li"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  41.0977242303%, 41.4313962517% {
+    content: "​i'm a cs major @ mudd who lik";
+    content: "​i'm a cs major @ mudd who lik"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  41.4323962517%, 41.7660682731% {
+    content: "​i'm a cs major @ mudd who like";
+    content: "​i'm a cs major @ mudd who like"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  41.7670682731%, 42.1007402945% {
+    content: "​i'm a cs major @ mudd who likes";
+    content: "​i'm a cs major @ mudd who likes"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  42.1017402945%, 42.4354123159% {
+    content: "​i'm a cs major @ mudd who likes ";
+    content: "​i'm a cs major @ mudd who likes "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  42.4364123159%, 42.7700843373% {
+    content: "​i'm a cs major @ mudd who likes d";
+    content: "​i'm a cs major @ mudd who likes d"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  42.7710843373%, 43.1047563588% {
+    content: "​i'm a cs major @ mudd who likes di";
+    content: "​i'm a cs major @ mudd who likes di"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  43.1057563588%, 43.4394283802% {
+    content: "​i'm a cs major @ mudd who likes dig";
+    content: "​i'm a cs major @ mudd who likes dig"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  43.4404283802%, 43.7741004016% {
+    content: "​i'm a cs major @ mudd who likes digi";
+    content: "​i'm a cs major @ mudd who likes digi"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  43.7751004016%, 44.108772423% {
+    content: "​i'm a cs major @ mudd who likes digit";
+    content: "​i'm a cs major @ mudd who likes digit"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  44.109772423%, 44.4434444444% {
+    content: "​i'm a cs major @ mudd who likes digita";
+    content: "​i'm a cs major @ mudd who likes digita"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  44.4444444444%, 44.7781164659% {
+    content: "​i'm a cs major @ mudd who likes digital";
+    content: "​i'm a cs major @ mudd who likes digital"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  44.7791164659%, 45.1127884873% {
+    content: "​i'm a cs major @ mudd who likes digital ";
+    content: "​i'm a cs major @ mudd who likes digital "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  45.1137884873%, 45.4474605087% {
+    content: "​i'm a cs major @ mudd who likes digital a";
+    content: "​i'm a cs major @ mudd who likes digital a"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  45.4484605087%, 45.7821325301% {
+    content: "​i'm a cs major @ mudd who likes digital ar";
+    content: "​i'm a cs major @ mudd who likes digital ar"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  45.7831325301%, 46.1168045515% {
+    content: "​i'm a cs major @ mudd who likes digital art";
+    content: "​i'm a cs major @ mudd who likes digital art"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  46.1178045515%, 53.4126546185% {
+    content: "​i'm a cs major @ mudd who likes digital art!";
+    content: "​i'm a cs major @ mudd who likes digital art!"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  53.4136546185%, 53.6803922356% {
+    content: "​i'm a cs major @ mudd who likes digital art";
+    content: "​i'm a cs major @ mudd who likes digital art"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  53.6813922356%, 53.9481298527% {
+    content: "​i'm a cs major @ mudd who likes digital ar";
+    content: "​i'm a cs major @ mudd who likes digital ar"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  53.9491298527%, 54.2158674699% {
+    content: "​i'm a cs major @ mudd who likes digital a";
+    content: "​i'm a cs major @ mudd who likes digital a"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  54.2168674699%, 54.483605087% {
+    content: "​i'm a cs major @ mudd who likes digital ";
+    content: "​i'm a cs major @ mudd who likes digital "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  54.484605087%, 54.7513427041% {
+    content: "​i'm a cs major @ mudd who likes digital";
+    content: "​i'm a cs major @ mudd who likes digital"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  54.7523427041%, 55.0190803213% {
+    content: "​i'm a cs major @ mudd who likes digita";
+    content: "​i'm a cs major @ mudd who likes digita"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  55.0200803213%, 55.2868179384% {
+    content: "​i'm a cs major @ mudd who likes digit";
+    content: "​i'm a cs major @ mudd who likes digit"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  55.2878179384%, 55.5545555556% {
+    content: "​i'm a cs major @ mudd who likes digi";
+    content: "​i'm a cs major @ mudd who likes digi"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  55.5555555556%, 55.8222931727% {
+    content: "​i'm a cs major @ mudd who likes dig";
+    content: "​i'm a cs major @ mudd who likes dig"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  55.8232931727%, 56.0900307898% {
+    content: "​i'm a cs major @ mudd who likes di";
+    content: "​i'm a cs major @ mudd who likes di"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  56.0910307898%, 56.357768407% {
+    content: "​i'm a cs major @ mudd who likes d";
+    content: "​i'm a cs major @ mudd who likes d"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  56.358768407%, 56.6255060241% {
+    content: "​i'm a cs major @ mudd who likes ";
+    content: "​i'm a cs major @ mudd who likes "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  56.6265060241%, 56.8932436412% {
+    content: "​i'm a cs major @ mudd who likes";
+    content: "​i'm a cs major @ mudd who likes"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  56.8942436412%, 57.1609812584% {
+    content: "​i'm a cs major @ mudd who like";
+    content: "​i'm a cs major @ mudd who like"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  57.1619812584%, 57.4287188755% {
+    content: "​i'm a cs major @ mudd who lik";
+    content: "​i'm a cs major @ mudd who lik"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  57.4297188755%, 57.6964564926% {
+    content: "​i'm a cs major @ mudd who li";
+    content: "​i'm a cs major @ mudd who li"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  57.6974564926%, 57.9641941098% {
+    content: "​i'm a cs major @ mudd who l";
+    content: "​i'm a cs major @ mudd who l"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  57.9651941098%, 58.2319317269% {
+    content: "​i'm a cs major @ mudd who ";
+    content: "​i'm a cs major @ mudd who "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  58.2329317269%, 58.499669344% {
+    content: "​i'm a cs major @ mudd who";
+    content: "​i'm a cs major @ mudd who"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  58.500669344%, 58.7674069612% {
+    content: "​i'm a cs major @ mudd wh";
+    content: "​i'm a cs major @ mudd wh"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  58.7684069612%, 59.0351445783% {
+    content: "​i'm a cs major @ mudd w";
+    content: "​i'm a cs major @ mudd w"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  59.0361445783%, 59.3028821954% {
+    content: "​i'm a cs major @ mudd ";
+    content: "​i'm a cs major @ mudd "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  59.3038821954%, 59.5706198126% {
+    content: "​i'm a cs major @ mudd";
+    content: "​i'm a cs major @ mudd"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  59.5716198126%, 59.8383574297% {
+    content: "​i'm a cs major @ mud";
+    content: "​i'm a cs major @ mud"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  59.8393574297%, 60.1060950469% {
+    content: "​i'm a cs major @ mu";
+    content: "​i'm a cs major @ mu"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  60.1070950469%, 60.373832664% {
+    content: "​i'm a cs major @ m";
+    content: "​i'm a cs major @ m"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  60.374832664%, 60.6415702811% {
+    content: "​i'm a cs major @ ";
+    content: "​i'm a cs major @ "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  60.6425702811%, 60.9093078983% {
+    content: "​i'm a cs major @";
+    content: "​i'm a cs major @"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  60.9103078983%, 61.1770455154% {
+    content: "​i'm a cs major ";
+    content: "​i'm a cs major "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  61.1780455154%, 61.4447831325% {
+    content: "​i'm a cs major";
+    content: "​i'm a cs major"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  61.4457831325%, 61.7125207497% {
+    content: "​i'm a cs majo";
+    content: "​i'm a cs majo"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  61.7135207497%, 61.9802583668% {
+    content: "​i'm a cs maj";
+    content: "​i'm a cs maj"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  61.9812583668%, 62.2479959839% {
+    content: "​i'm a cs ma";
+    content: "​i'm a cs ma"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  62.2489959839%, 62.5157336011% {
+    content: "​i'm a cs m";
+    content: "​i'm a cs m"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  62.5167336011%, 62.7834712182% {
+    content: "​i'm a cs ";
+    content: "​i'm a cs "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  62.7844712182%, 63.0512088353% {
+    content: "​i'm a cs";
+    content: "​i'm a cs"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  63.0522088353%, 63.3189464525% {
+    content: "​i'm a c";
+    content: "​i'm a c"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  63.3199464525%, 63.5866840696% {
+    content: "​i'm a ";
+    content: "​i'm a "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  63.5876840696%, 63.8544216867% {
+    content: "​i'm a";
+    content: "​i'm a"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  63.8554216867%, 64.1221593039% {
+    content: "​i'm ";
+    content: "​i'm "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  64.1231593039%, 64.389896921% {
+    content: "​i'm";
+    content: "​i'm"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  64.390896921%, 64.6576345382% {
+    content: "​i'";
+    content: "​i'"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  64.6586345382%, 64.9253721553% {
+    content: "​i";
+    content: "​i"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  64.9263721553%, 68.2720923695% {
+    content: "​";
+    content: "​"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  68.2730923695%, 68.6067643909% {
+    content: "​i";
+    content: "​i"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  68.6077643909%, 68.9414364123% {
+    content: "​i ";
+    content: "​i "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  68.9424364123%, 69.2761084337% {
+    content: "​i h";
+    content: "​i h"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  69.2771084337%, 69.6107804552% {
+    content: "​i ho";
+    content: "​i ho"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  69.6117804552%, 69.9454524766% {
+    content: "​i hop";
+    content: "​i hop"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  69.9464524766%, 70.280124498% {
+    content: "​i hope";
+    content: "​i hope"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  70.281124498%, 70.6147965194% {
+    content: "​i hope ";
+    content: "​i hope "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  70.6157965194%, 70.9494685408% {
+    content: "​i hope y";
+    content: "​i hope y"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  70.9504685408%, 71.2841405622% {
+    content: "​i hope yo";
+    content: "​i hope yo"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  71.2851405622%, 71.6188125837% {
+    content: "​i hope you";
+    content: "​i hope you"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  71.6198125837%, 71.9534846051% {
+    content: "​i hope you ";
+    content: "​i hope you "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  71.9544846051%, 72.2881566265% {
+    content: "​i hope you l";
+    content: "​i hope you l"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  72.2891566265%, 72.6228286479% {
+    content: "​i hope you li";
+    content: "​i hope you li"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  72.6238286479%, 72.9575006693% {
+    content: "​i hope you lik";
+    content: "​i hope you lik"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  72.9585006693%, 73.2921726908% {
+    content: "​i hope you like";
+    content: "​i hope you like"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  73.2931726908%, 73.6268447122% {
+    content: "​i hope you like ";
+    content: "​i hope you like "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  73.6278447122%, 73.9615167336% {
+    content: "​i hope you like m";
+    content: "​i hope you like m"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  73.9625167336%, 74.296188755% {
+    content: "​i hope you like my";
+    content: "​i hope you like my"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  74.297188755%, 74.6308607764% {
+    content: "​i hope you like my ";
+    content: "​i hope you like my "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  74.6318607764%, 74.9655327979% {
+    content: "​i hope you like my a";
+    content: "​i hope you like my a"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  74.9665327979%, 75.3002048193% {
+    content: "​i hope you like my ar";
+    content: "​i hope you like my ar"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  75.3012048193%, 75.6348768407% {
+    content: "​i hope you like my art";
+    content: "​i hope you like my art"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  75.6358768407%, 75.9695488621% {
+    content: "​i hope you like my art1";
+    content: "​i hope you like my art1"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  75.9705488621%, 76.3042208835% {
+    content: "​i hope you like my art14";
+    content: "​i hope you like my art14"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  76.3052208835%, 76.638892905% {
+    content: "​i hope you like my art141";
+    content: "​i hope you like my art141"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  76.639892905%, 76.9735649264% {
+    content: "​i hope you like my art141 ";
+    content: "​i hope you like my art141 "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  76.9745649264%, 77.3082369478% {
+    content: "​i hope you like my art141 p";
+    content: "​i hope you like my art141 p"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  77.3092369478%, 77.6429089692% {
+    content: "​i hope you like my art141 po";
+    content: "​i hope you like my art141 po"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  77.6439089692%, 77.9775809906% {
+    content: "​i hope you like my art141 por";
+    content: "​i hope you like my art141 por"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  77.9785809906%, 78.312253012% {
+    content: "​i hope you like my art141 port";
+    content: "​i hope you like my art141 port"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  78.313253012%, 78.6469250335% {
+    content: "​i hope you like my art141 portf";
+    content: "​i hope you like my art141 portf"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  78.6479250335%, 78.9815970549% {
+    content: "​i hope you like my art141 portfo";
+    content: "​i hope you like my art141 portfo"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  78.9825970549%, 79.3162690763% {
+    content: "​i hope you like my art141 portfol";
+    content: "​i hope you like my art141 portfol"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  79.3172690763%, 79.6509410977% {
+    content: "​i hope you like my art141 portfoli";
+    content: "​i hope you like my art141 portfoli"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  79.6519410977%, 79.9856131191% {
+    content: "​i hope you like my art141 portfolio";
+    content: "​i hope you like my art141 portfolio"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  79.9866131191%, 87.2814631861% {
+    content: "​i hope you like my art141 portfolio!";
+    content: "​i hope you like my art141 portfolio!"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  87.2824631861%, 87.5492008032% {
+    content: "​i hope you like my art141 portfolio";
+    content: "​i hope you like my art141 portfolio"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  87.5502008032%, 87.8169384203% {
+    content: "​i hope you like my art141 portfoli";
+    content: "​i hope you like my art141 portfoli"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  87.8179384203%, 88.0846760375% {
+    content: "​i hope you like my art141 portfol";
+    content: "​i hope you like my art141 portfol"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  88.0856760375%, 88.3524136546% {
+    content: "​i hope you like my art141 portfo";
+    content: "​i hope you like my art141 portfo"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  88.3534136546%, 88.6201512718% {
+    content: "​i hope you like my art141 portf";
+    content: "​i hope you like my art141 portf"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  88.6211512718%, 88.8878888889% {
+    content: "​i hope you like my art141 port";
+    content: "​i hope you like my art141 port"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  88.8888888889%, 89.155626506% {
+    content: "​i hope you like my art141 por";
+    content: "​i hope you like my art141 por"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  89.156626506%, 89.4233641232% {
+    content: "​i hope you like my art141 po";
+    content: "​i hope you like my art141 po"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  89.4243641232%, 89.6911017403% {
+    content: "​i hope you like my art141 p";
+    content: "​i hope you like my art141 p"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  89.6921017403%, 89.9588393574% {
+    content: "​i hope you like my art141 ";
+    content: "​i hope you like my art141 "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  89.9598393574%, 90.2265769746% {
+    content: "​i hope you like my art141";
+    content: "​i hope you like my art141"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  90.2275769746%, 90.4943145917% {
+    content: "​i hope you like my art14";
+    content: "​i hope you like my art14"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  90.4953145917%, 90.7620522088% {
+    content: "​i hope you like my art1";
+    content: "​i hope you like my art1"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  90.7630522088%, 91.029789826% {
+    content: "​i hope you like my art";
+    content: "​i hope you like my art"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  91.030789826%, 91.2975274431% {
+    content: "​i hope you like my ar";
+    content: "​i hope you like my ar"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  91.2985274431%, 91.5652650602% {
+    content: "​i hope you like my a";
+    content: "​i hope you like my a"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  91.5662650602%, 91.8330026774% {
+    content: "​i hope you like my ";
+    content: "​i hope you like my "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  91.8340026774%, 92.1007402945% {
+    content: "​i hope you like my";
+    content: "​i hope you like my"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  92.1017402945%, 92.3684779116% {
+    content: "​i hope you like m";
+    content: "​i hope you like m"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  92.3694779116%, 92.6362155288% {
+    content: "​i hope you like ";
+    content: "​i hope you like "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  92.6372155288%, 92.9039531459% {
+    content: "​i hope you like";
+    content: "​i hope you like"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  92.9049531459%, 93.1716907631% {
+    content: "​i hope you lik";
+    content: "​i hope you lik"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  93.1726907631%, 93.4394283802% {
+    content: "​i hope you li";
+    content: "​i hope you li"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  93.4404283802%, 93.7071659973% {
+    content: "​i hope you l";
+    content: "​i hope you l"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  93.7081659973%, 93.9749036145% {
+    content: "​i hope you ";
+    content: "​i hope you "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  93.9759036145%, 94.2426412316% {
+    content: "​i hope you";
+    content: "​i hope you"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  94.2436412316%, 94.5103788487% {
+    content: "​i hope yo";
+    content: "​i hope yo"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  94.5113788487%, 94.7781164659% {
+    content: "​i hope y";
+    content: "​i hope y"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  94.7791164659%, 95.045854083% {
+    content: "​i hope ";
+    content: "​i hope "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  95.046854083%, 95.3135917001% {
+    content: "​i hope";
+    content: "​i hope"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  95.3145917001%, 95.5813293173% {
+    content: "​i hop";
+    content: "​i hop"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  95.5823293173%, 95.8490669344% {
+    content: "​i ho";
+    content: "​i ho"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  95.8500669344%, 96.1168045515% {
+    content: "​i h";
+    content: "​i h"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  96.1178045515%, 96.3845421687% {
+    content: "​i ";
+    content: "​i "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  96.3855421687%, 96.6522797858% {
+    content: "​i";
+    content: "​i"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  96.6532797858%, 100% {
+    content: "​";
+    content: "​"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+}
+@keyframes typed-0 {
+  0%, 0.3336720214% {
+    content: "​h";
+    content: "​h"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  0.3346720214%, 0.6683440428% {
+    content: "​he";
+    content: "​he"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  0.6693440428%, 1.0030160643% {
+    content: "​hel";
+    content: "​hel"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  1.0040160643%, 1.3376880857% {
+    content: "​hell";
+    content: "​hell"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  1.3386880857%, 1.6723601071% {
+    content: "​hello";
+    content: "​hello"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  1.6733601071%, 2.0070321285% {
+    content: "​hello ";
+    content: "​hello "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  2.0080321285%, 2.3417041499% {
+    content: "​hello h";
+    content: "​hello h"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  2.3427041499%, 2.6763761714% {
+    content: "​hello he";
+    content: "​hello he"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  2.6773761714%, 3.0110481928% {
+    content: "​hello hel";
+    content: "​hello hel"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  3.0120481928%, 3.3457202142% {
+    content: "​hello hell";
+    content: "​hello hell"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  3.3467202142%, 3.6803922356% {
+    content: "​hello hello";
+    content: "​hello hello"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  3.6813922356%, 4.015064257% {
+    content: "​hello hello ";
+    content: "​hello hello "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  4.016064257%, 4.3497362784% {
+    content: "​hello hello h";
+    content: "​hello hello h"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  4.3507362784%, 4.6844082999% {
+    content: "​hello hello he";
+    content: "​hello hello he"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  4.6854082999%, 5.0190803213% {
+    content: "​hello hello hel";
+    content: "​hello hello hel"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  5.0200803213%, 5.3537523427% {
+    content: "​hello hello hell";
+    content: "​hello hello hell"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  5.3547523427%, 5.6884243641% {
+    content: "​hello hello hello";
+    content: "​hello hello hello"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  5.6894243641%, 6.0230963855% {
+    content: "​hello hello hello,";
+    content: "​hello hello hello,"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  6.0240963855%, 6.357768407% {
+    content: "​hello hello hello, ";
+    content: "​hello hello hello, "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  6.358768407%, 6.6924404284% {
+    content: "​hello hello hello, i";
+    content: "​hello hello hello, i"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  6.6934404284%, 7.0271124498% {
+    content: "​hello hello hello, i'";
+    content: "​hello hello hello, i'"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  7.0281124498%, 7.3617844712% {
+    content: "​hello hello hello, i'm";
+    content: "​hello hello hello, i'm"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  7.3627844712%, 7.6964564926% {
+    content: "​hello hello hello, i'm ";
+    content: "​hello hello hello, i'm "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  7.6974564926%, 8.0311285141% {
+    content: "​hello hello hello, i'm v";
+    content: "​hello hello hello, i'm v"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  8.0321285141%, 8.3658005355% {
+    content: "​hello hello hello, i'm va";
+    content: "​hello hello hello, i'm va"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  8.3668005355%, 8.7004725569% {
+    content: "​hello hello hello, i'm van";
+    content: "​hello hello hello, i'm van"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  8.7014725569%, 9.0351445783% {
+    content: "​hello hello hello, i'm vani";
+    content: "​hello hello hello, i'm vani"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  9.0361445783%, 9.3698165997% {
+    content: "​hello hello hello, i'm vani ";
+    content: "​hello hello hello, i'm vani "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  9.3708165997%, 9.7044886212% {
+    content: "​hello hello hello, i'm vani s";
+    content: "​hello hello hello, i'm vani s"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  9.7054886212%, 10.0391606426% {
+    content: "​hello hello hello, i'm vani sa";
+    content: "​hello hello hello, i'm vani sa"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  10.0401606426%, 10.373832664% {
+    content: "​hello hello hello, i'm vani sac";
+    content: "​hello hello hello, i'm vani sac"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  10.374832664%, 10.7085046854% {
+    content: "​hello hello hello, i'm vani sach";
+    content: "​hello hello hello, i'm vani sach"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  10.7095046854%, 11.0431767068% {
+    content: "​hello hello hello, i'm vani sachd";
+    content: "​hello hello hello, i'm vani sachd"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  11.0441767068%, 11.3778487282% {
+    content: "​hello hello hello, i'm vani sachde";
+    content: "​hello hello hello, i'm vani sachde"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  11.3788487282%, 11.7125207497% {
+    content: "​hello hello hello, i'm vani sachdev";
+    content: "​hello hello hello, i'm vani sachdev"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  11.7135207497%, 19.0083708166% {
+    content: "​hello hello hello, i'm vani sachdev.";
+    content: "​hello hello hello, i'm vani sachdev."/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  19.0093708166%, 19.2761084337% {
+    content: "​hello hello hello, i'm vani sachdev";
+    content: "​hello hello hello, i'm vani sachdev"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  19.2771084337%, 19.5438460509% {
+    content: "​hello hello hello, i'm vani sachde";
+    content: "​hello hello hello, i'm vani sachde"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  19.5448460509%, 19.811583668% {
+    content: "​hello hello hello, i'm vani sachd";
+    content: "​hello hello hello, i'm vani sachd"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  19.812583668%, 20.0793212851% {
+    content: "​hello hello hello, i'm vani sach";
+    content: "​hello hello hello, i'm vani sach"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  20.0803212851%, 20.3470589023% {
+    content: "​hello hello hello, i'm vani sac";
+    content: "​hello hello hello, i'm vani sac"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  20.3480589023%, 20.6147965194% {
+    content: "​hello hello hello, i'm vani sa";
+    content: "​hello hello hello, i'm vani sa"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  20.6157965194%, 20.8825341365% {
+    content: "​hello hello hello, i'm vani s";
+    content: "​hello hello hello, i'm vani s"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  20.8835341365%, 21.1502717537% {
+    content: "​hello hello hello, i'm vani ";
+    content: "​hello hello hello, i'm vani "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  21.1512717537%, 21.4180093708% {
+    content: "​hello hello hello, i'm vani";
+    content: "​hello hello hello, i'm vani"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  21.4190093708%, 21.685746988% {
+    content: "​hello hello hello, i'm van";
+    content: "​hello hello hello, i'm van"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  21.686746988%, 21.9534846051% {
+    content: "​hello hello hello, i'm va";
+    content: "​hello hello hello, i'm va"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  21.9544846051%, 22.2212222222% {
+    content: "​hello hello hello, i'm v";
+    content: "​hello hello hello, i'm v"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  22.2222222222%, 22.4889598394% {
+    content: "​hello hello hello, i'm ";
+    content: "​hello hello hello, i'm "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  22.4899598394%, 22.7566974565% {
+    content: "​hello hello hello, i'm";
+    content: "​hello hello hello, i'm"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  22.7576974565%, 23.0244350736% {
+    content: "​hello hello hello, i'";
+    content: "​hello hello hello, i'"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  23.0254350736%, 23.2921726908% {
+    content: "​hello hello hello, i";
+    content: "​hello hello hello, i"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  23.2931726908%, 23.5599103079% {
+    content: "​hello hello hello, ";
+    content: "​hello hello hello, "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  23.5609103079%, 23.827647925% {
+    content: "​hello hello hello,";
+    content: "​hello hello hello,"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  23.828647925%, 24.0953855422% {
+    content: "​hello hello hello";
+    content: "​hello hello hello"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  24.0963855422%, 24.3631231593% {
+    content: "​hello hello hell";
+    content: "​hello hello hell"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  24.3641231593%, 24.6308607764% {
+    content: "​hello hello hel";
+    content: "​hello hello hel"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  24.6318607764%, 24.8985983936% {
+    content: "​hello hello he";
+    content: "​hello hello he"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  24.8995983936%, 25.1663360107% {
+    content: "​hello hello h";
+    content: "​hello hello h"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  25.1673360107%, 25.4340736278% {
+    content: "​hello hello ";
+    content: "​hello hello "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  25.4350736278%, 25.701811245% {
+    content: "​hello hello";
+    content: "​hello hello"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  25.702811245%, 25.9695488621% {
+    content: "​hello hell";
+    content: "​hello hell"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  25.9705488621%, 26.2372864793% {
+    content: "​hello hel";
+    content: "​hello hel"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  26.2382864793%, 26.5050240964% {
+    content: "​hello he";
+    content: "​hello he"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  26.5060240964%, 26.7727617135% {
+    content: "​hello h";
+    content: "​hello h"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  26.7737617135%, 27.0404993307% {
+    content: "​hello ";
+    content: "​hello "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  27.0414993307%, 27.3082369478% {
+    content: "​hello";
+    content: "​hello"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  27.3092369478%, 27.5759745649% {
+    content: "​hell";
+    content: "​hell"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  27.5769745649%, 27.8437121821% {
+    content: "​hel";
+    content: "​hel"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  27.8447121821%, 28.1114497992% {
+    content: "​he";
+    content: "​he"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  28.1124497992%, 28.3791874163% {
+    content: "​h";
+    content: "​h"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  28.3801874163%, 31.7259076305% {
+    content: "​";
+    content: "​"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  31.7269076305%, 32.0605796519% {
+    content: "​i";
+    content: "​i"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  32.0615796519%, 32.3952516734% {
+    content: "​i'";
+    content: "​i'"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  32.3962516734%, 32.7299236948% {
+    content: "​i'm";
+    content: "​i'm"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  32.7309236948%, 33.0645957162% {
+    content: "​i'm ";
+    content: "​i'm "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  33.0655957162%, 33.3992677376% {
+    content: "​i'm a";
+    content: "​i'm a"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  33.4002677376%, 33.733939759% {
+    content: "​i'm a ";
+    content: "​i'm a "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  33.734939759%, 34.0686117805% {
+    content: "​i'm a c";
+    content: "​i'm a c"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  34.0696117805%, 34.4032838019% {
+    content: "​i'm a cs";
+    content: "​i'm a cs"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  34.4042838019%, 34.7379558233% {
+    content: "​i'm a cs ";
+    content: "​i'm a cs "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  34.7389558233%, 35.0726278447% {
+    content: "​i'm a cs m";
+    content: "​i'm a cs m"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  35.0736278447%, 35.4072998661% {
+    content: "​i'm a cs ma";
+    content: "​i'm a cs ma"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  35.4082998661%, 35.7419718876% {
+    content: "​i'm a cs maj";
+    content: "​i'm a cs maj"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  35.7429718876%, 36.076643909% {
+    content: "​i'm a cs majo";
+    content: "​i'm a cs majo"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  36.077643909%, 36.4113159304% {
+    content: "​i'm a cs major";
+    content: "​i'm a cs major"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  36.4123159304%, 36.7459879518% {
+    content: "​i'm a cs major ";
+    content: "​i'm a cs major "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  36.7469879518%, 37.0806599732% {
+    content: "​i'm a cs major @";
+    content: "​i'm a cs major @"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  37.0816599732%, 37.4153319946% {
+    content: "​i'm a cs major @ ";
+    content: "​i'm a cs major @ "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  37.4163319946%, 37.7500040161% {
+    content: "​i'm a cs major @ m";
+    content: "​i'm a cs major @ m"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  37.7510040161%, 38.0846760375% {
+    content: "​i'm a cs major @ mu";
+    content: "​i'm a cs major @ mu"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  38.0856760375%, 38.4193480589% {
+    content: "​i'm a cs major @ mud";
+    content: "​i'm a cs major @ mud"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  38.4203480589%, 38.7540200803% {
+    content: "​i'm a cs major @ mudd";
+    content: "​i'm a cs major @ mudd"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  38.7550200803%, 39.0886921017% {
+    content: "​i'm a cs major @ mudd ";
+    content: "​i'm a cs major @ mudd "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  39.0896921017%, 39.4233641232% {
+    content: "​i'm a cs major @ mudd w";
+    content: "​i'm a cs major @ mudd w"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  39.4243641232%, 39.7580361446% {
+    content: "​i'm a cs major @ mudd wh";
+    content: "​i'm a cs major @ mudd wh"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  39.7590361446%, 40.092708166% {
+    content: "​i'm a cs major @ mudd who";
+    content: "​i'm a cs major @ mudd who"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  40.093708166%, 40.4273801874% {
+    content: "​i'm a cs major @ mudd who ";
+    content: "​i'm a cs major @ mudd who "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  40.4283801874%, 40.7620522088% {
+    content: "​i'm a cs major @ mudd who l";
+    content: "​i'm a cs major @ mudd who l"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  40.7630522088%, 41.0967242303% {
+    content: "​i'm a cs major @ mudd who li";
+    content: "​i'm a cs major @ mudd who li"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  41.0977242303%, 41.4313962517% {
+    content: "​i'm a cs major @ mudd who lik";
+    content: "​i'm a cs major @ mudd who lik"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  41.4323962517%, 41.7660682731% {
+    content: "​i'm a cs major @ mudd who like";
+    content: "​i'm a cs major @ mudd who like"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  41.7670682731%, 42.1007402945% {
+    content: "​i'm a cs major @ mudd who likes";
+    content: "​i'm a cs major @ mudd who likes"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  42.1017402945%, 42.4354123159% {
+    content: "​i'm a cs major @ mudd who likes ";
+    content: "​i'm a cs major @ mudd who likes "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  42.4364123159%, 42.7700843373% {
+    content: "​i'm a cs major @ mudd who likes d";
+    content: "​i'm a cs major @ mudd who likes d"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  42.7710843373%, 43.1047563588% {
+    content: "​i'm a cs major @ mudd who likes di";
+    content: "​i'm a cs major @ mudd who likes di"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  43.1057563588%, 43.4394283802% {
+    content: "​i'm a cs major @ mudd who likes dig";
+    content: "​i'm a cs major @ mudd who likes dig"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  43.4404283802%, 43.7741004016% {
+    content: "​i'm a cs major @ mudd who likes digi";
+    content: "​i'm a cs major @ mudd who likes digi"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  43.7751004016%, 44.108772423% {
+    content: "​i'm a cs major @ mudd who likes digit";
+    content: "​i'm a cs major @ mudd who likes digit"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  44.109772423%, 44.4434444444% {
+    content: "​i'm a cs major @ mudd who likes digita";
+    content: "​i'm a cs major @ mudd who likes digita"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  44.4444444444%, 44.7781164659% {
+    content: "​i'm a cs major @ mudd who likes digital";
+    content: "​i'm a cs major @ mudd who likes digital"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  44.7791164659%, 45.1127884873% {
+    content: "​i'm a cs major @ mudd who likes digital ";
+    content: "​i'm a cs major @ mudd who likes digital "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  45.1137884873%, 45.4474605087% {
+    content: "​i'm a cs major @ mudd who likes digital a";
+    content: "​i'm a cs major @ mudd who likes digital a"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  45.4484605087%, 45.7821325301% {
+    content: "​i'm a cs major @ mudd who likes digital ar";
+    content: "​i'm a cs major @ mudd who likes digital ar"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  45.7831325301%, 46.1168045515% {
+    content: "​i'm a cs major @ mudd who likes digital art";
+    content: "​i'm a cs major @ mudd who likes digital art"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  46.1178045515%, 53.4126546185% {
+    content: "​i'm a cs major @ mudd who likes digital art!";
+    content: "​i'm a cs major @ mudd who likes digital art!"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  53.4136546185%, 53.6803922356% {
+    content: "​i'm a cs major @ mudd who likes digital art";
+    content: "​i'm a cs major @ mudd who likes digital art"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  53.6813922356%, 53.9481298527% {
+    content: "​i'm a cs major @ mudd who likes digital ar";
+    content: "​i'm a cs major @ mudd who likes digital ar"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  53.9491298527%, 54.2158674699% {
+    content: "​i'm a cs major @ mudd who likes digital a";
+    content: "​i'm a cs major @ mudd who likes digital a"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  54.2168674699%, 54.483605087% {
+    content: "​i'm a cs major @ mudd who likes digital ";
+    content: "​i'm a cs major @ mudd who likes digital "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  54.484605087%, 54.7513427041% {
+    content: "​i'm a cs major @ mudd who likes digital";
+    content: "​i'm a cs major @ mudd who likes digital"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  54.7523427041%, 55.0190803213% {
+    content: "​i'm a cs major @ mudd who likes digita";
+    content: "​i'm a cs major @ mudd who likes digita"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  55.0200803213%, 55.2868179384% {
+    content: "​i'm a cs major @ mudd who likes digit";
+    content: "​i'm a cs major @ mudd who likes digit"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  55.2878179384%, 55.5545555556% {
+    content: "​i'm a cs major @ mudd who likes digi";
+    content: "​i'm a cs major @ mudd who likes digi"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  55.5555555556%, 55.8222931727% {
+    content: "​i'm a cs major @ mudd who likes dig";
+    content: "​i'm a cs major @ mudd who likes dig"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  55.8232931727%, 56.0900307898% {
+    content: "​i'm a cs major @ mudd who likes di";
+    content: "​i'm a cs major @ mudd who likes di"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  56.0910307898%, 56.357768407% {
+    content: "​i'm a cs major @ mudd who likes d";
+    content: "​i'm a cs major @ mudd who likes d"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  56.358768407%, 56.6255060241% {
+    content: "​i'm a cs major @ mudd who likes ";
+    content: "​i'm a cs major @ mudd who likes "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  56.6265060241%, 56.8932436412% {
+    content: "​i'm a cs major @ mudd who likes";
+    content: "​i'm a cs major @ mudd who likes"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  56.8942436412%, 57.1609812584% {
+    content: "​i'm a cs major @ mudd who like";
+    content: "​i'm a cs major @ mudd who like"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  57.1619812584%, 57.4287188755% {
+    content: "​i'm a cs major @ mudd who lik";
+    content: "​i'm a cs major @ mudd who lik"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  57.4297188755%, 57.6964564926% {
+    content: "​i'm a cs major @ mudd who li";
+    content: "​i'm a cs major @ mudd who li"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  57.6974564926%, 57.9641941098% {
+    content: "​i'm a cs major @ mudd who l";
+    content: "​i'm a cs major @ mudd who l"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  57.9651941098%, 58.2319317269% {
+    content: "​i'm a cs major @ mudd who ";
+    content: "​i'm a cs major @ mudd who "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  58.2329317269%, 58.499669344% {
+    content: "​i'm a cs major @ mudd who";
+    content: "​i'm a cs major @ mudd who"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  58.500669344%, 58.7674069612% {
+    content: "​i'm a cs major @ mudd wh";
+    content: "​i'm a cs major @ mudd wh"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  58.7684069612%, 59.0351445783% {
+    content: "​i'm a cs major @ mudd w";
+    content: "​i'm a cs major @ mudd w"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  59.0361445783%, 59.3028821954% {
+    content: "​i'm a cs major @ mudd ";
+    content: "​i'm a cs major @ mudd "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  59.3038821954%, 59.5706198126% {
+    content: "​i'm a cs major @ mudd";
+    content: "​i'm a cs major @ mudd"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  59.5716198126%, 59.8383574297% {
+    content: "​i'm a cs major @ mud";
+    content: "​i'm a cs major @ mud"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  59.8393574297%, 60.1060950469% {
+    content: "​i'm a cs major @ mu";
+    content: "​i'm a cs major @ mu"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  60.1070950469%, 60.373832664% {
+    content: "​i'm a cs major @ m";
+    content: "​i'm a cs major @ m"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  60.374832664%, 60.6415702811% {
+    content: "​i'm a cs major @ ";
+    content: "​i'm a cs major @ "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  60.6425702811%, 60.9093078983% {
+    content: "​i'm a cs major @";
+    content: "​i'm a cs major @"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  60.9103078983%, 61.1770455154% {
+    content: "​i'm a cs major ";
+    content: "​i'm a cs major "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  61.1780455154%, 61.4447831325% {
+    content: "​i'm a cs major";
+    content: "​i'm a cs major"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  61.4457831325%, 61.7125207497% {
+    content: "​i'm a cs majo";
+    content: "​i'm a cs majo"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  61.7135207497%, 61.9802583668% {
+    content: "​i'm a cs maj";
+    content: "​i'm a cs maj"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  61.9812583668%, 62.2479959839% {
+    content: "​i'm a cs ma";
+    content: "​i'm a cs ma"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  62.2489959839%, 62.5157336011% {
+    content: "​i'm a cs m";
+    content: "​i'm a cs m"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  62.5167336011%, 62.7834712182% {
+    content: "​i'm a cs ";
+    content: "​i'm a cs "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  62.7844712182%, 63.0512088353% {
+    content: "​i'm a cs";
+    content: "​i'm a cs"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  63.0522088353%, 63.3189464525% {
+    content: "​i'm a c";
+    content: "​i'm a c"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  63.3199464525%, 63.5866840696% {
+    content: "​i'm a ";
+    content: "​i'm a "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  63.5876840696%, 63.8544216867% {
+    content: "​i'm a";
+    content: "​i'm a"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  63.8554216867%, 64.1221593039% {
+    content: "​i'm ";
+    content: "​i'm "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  64.1231593039%, 64.389896921% {
+    content: "​i'm";
+    content: "​i'm"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  64.390896921%, 64.6576345382% {
+    content: "​i'";
+    content: "​i'"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  64.6586345382%, 64.9253721553% {
+    content: "​i";
+    content: "​i"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  64.9263721553%, 68.2720923695% {
+    content: "​";
+    content: "​"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  68.2730923695%, 68.6067643909% {
+    content: "​i";
+    content: "​i"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  68.6077643909%, 68.9414364123% {
+    content: "​i ";
+    content: "​i "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  68.9424364123%, 69.2761084337% {
+    content: "​i h";
+    content: "​i h"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  69.2771084337%, 69.6107804552% {
+    content: "​i ho";
+    content: "​i ho"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  69.6117804552%, 69.9454524766% {
+    content: "​i hop";
+    content: "​i hop"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  69.9464524766%, 70.280124498% {
+    content: "​i hope";
+    content: "​i hope"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  70.281124498%, 70.6147965194% {
+    content: "​i hope ";
+    content: "​i hope "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  70.6157965194%, 70.9494685408% {
+    content: "​i hope y";
+    content: "​i hope y"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  70.9504685408%, 71.2841405622% {
+    content: "​i hope yo";
+    content: "​i hope yo"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  71.2851405622%, 71.6188125837% {
+    content: "​i hope you";
+    content: "​i hope you"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  71.6198125837%, 71.9534846051% {
+    content: "​i hope you ";
+    content: "​i hope you "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  71.9544846051%, 72.2881566265% {
+    content: "​i hope you l";
+    content: "​i hope you l"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  72.2891566265%, 72.6228286479% {
+    content: "​i hope you li";
+    content: "​i hope you li"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  72.6238286479%, 72.9575006693% {
+    content: "​i hope you lik";
+    content: "​i hope you lik"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  72.9585006693%, 73.2921726908% {
+    content: "​i hope you like";
+    content: "​i hope you like"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  73.2931726908%, 73.6268447122% {
+    content: "​i hope you like ";
+    content: "​i hope you like "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  73.6278447122%, 73.9615167336% {
+    content: "​i hope you like m";
+    content: "​i hope you like m"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  73.9625167336%, 74.296188755% {
+    content: "​i hope you like my";
+    content: "​i hope you like my"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  74.297188755%, 74.6308607764% {
+    content: "​i hope you like my ";
+    content: "​i hope you like my "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  74.6318607764%, 74.9655327979% {
+    content: "​i hope you like my a";
+    content: "​i hope you like my a"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  74.9665327979%, 75.3002048193% {
+    content: "​i hope you like my ar";
+    content: "​i hope you like my ar"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  75.3012048193%, 75.6348768407% {
+    content: "​i hope you like my art";
+    content: "​i hope you like my art"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  75.6358768407%, 75.9695488621% {
+    content: "​i hope you like my art1";
+    content: "​i hope you like my art1"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  75.9705488621%, 76.3042208835% {
+    content: "​i hope you like my art14";
+    content: "​i hope you like my art14"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  76.3052208835%, 76.638892905% {
+    content: "​i hope you like my art141";
+    content: "​i hope you like my art141"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  76.639892905%, 76.9735649264% {
+    content: "​i hope you like my art141 ";
+    content: "​i hope you like my art141 "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  76.9745649264%, 77.3082369478% {
+    content: "​i hope you like my art141 p";
+    content: "​i hope you like my art141 p"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  77.3092369478%, 77.6429089692% {
+    content: "​i hope you like my art141 po";
+    content: "​i hope you like my art141 po"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  77.6439089692%, 77.9775809906% {
+    content: "​i hope you like my art141 por";
+    content: "​i hope you like my art141 por"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  77.9785809906%, 78.312253012% {
+    content: "​i hope you like my art141 port";
+    content: "​i hope you like my art141 port"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  78.313253012%, 78.6469250335% {
+    content: "​i hope you like my art141 portf";
+    content: "​i hope you like my art141 portf"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  78.6479250335%, 78.9815970549% {
+    content: "​i hope you like my art141 portfo";
+    content: "​i hope you like my art141 portfo"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  78.9825970549%, 79.3162690763% {
+    content: "​i hope you like my art141 portfol";
+    content: "​i hope you like my art141 portfol"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  79.3172690763%, 79.6509410977% {
+    content: "​i hope you like my art141 portfoli";
+    content: "​i hope you like my art141 portfoli"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  79.6519410977%, 79.9856131191% {
+    content: "​i hope you like my art141 portfolio";
+    content: "​i hope you like my art141 portfolio"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  79.9866131191%, 87.2814631861% {
+    content: "​i hope you like my art141 portfolio!";
+    content: "​i hope you like my art141 portfolio!"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  87.2824631861%, 87.5492008032% {
+    content: "​i hope you like my art141 portfolio";
+    content: "​i hope you like my art141 portfolio"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  87.5502008032%, 87.8169384203% {
+    content: "​i hope you like my art141 portfoli";
+    content: "​i hope you like my art141 portfoli"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  87.8179384203%, 88.0846760375% {
+    content: "​i hope you like my art141 portfol";
+    content: "​i hope you like my art141 portfol"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  88.0856760375%, 88.3524136546% {
+    content: "​i hope you like my art141 portfo";
+    content: "​i hope you like my art141 portfo"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  88.3534136546%, 88.6201512718% {
+    content: "​i hope you like my art141 portf";
+    content: "​i hope you like my art141 portf"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  88.6211512718%, 88.8878888889% {
+    content: "​i hope you like my art141 port";
+    content: "​i hope you like my art141 port"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  88.8888888889%, 89.155626506% {
+    content: "​i hope you like my art141 por";
+    content: "​i hope you like my art141 por"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  89.156626506%, 89.4233641232% {
+    content: "​i hope you like my art141 po";
+    content: "​i hope you like my art141 po"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  89.4243641232%, 89.6911017403% {
+    content: "​i hope you like my art141 p";
+    content: "​i hope you like my art141 p"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  89.6921017403%, 89.9588393574% {
+    content: "​i hope you like my art141 ";
+    content: "​i hope you like my art141 "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  89.9598393574%, 90.2265769746% {
+    content: "​i hope you like my art141";
+    content: "​i hope you like my art141"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  90.2275769746%, 90.4943145917% {
+    content: "​i hope you like my art14";
+    content: "​i hope you like my art14"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  90.4953145917%, 90.7620522088% {
+    content: "​i hope you like my art1";
+    content: "​i hope you like my art1"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  90.7630522088%, 91.029789826% {
+    content: "​i hope you like my art";
+    content: "​i hope you like my art"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  91.030789826%, 91.2975274431% {
+    content: "​i hope you like my ar";
+    content: "​i hope you like my ar"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  91.2985274431%, 91.5652650602% {
+    content: "​i hope you like my a";
+    content: "​i hope you like my a"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  91.5662650602%, 91.8330026774% {
+    content: "​i hope you like my ";
+    content: "​i hope you like my "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  91.8340026774%, 92.1007402945% {
+    content: "​i hope you like my";
+    content: "​i hope you like my"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  92.1017402945%, 92.3684779116% {
+    content: "​i hope you like m";
+    content: "​i hope you like m"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  92.3694779116%, 92.6362155288% {
+    content: "​i hope you like ";
+    content: "​i hope you like "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  92.6372155288%, 92.9039531459% {
+    content: "​i hope you like";
+    content: "​i hope you like"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  92.9049531459%, 93.1716907631% {
+    content: "​i hope you lik";
+    content: "​i hope you lik"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  93.1726907631%, 93.4394283802% {
+    content: "​i hope you li";
+    content: "​i hope you li"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  93.4404283802%, 93.7071659973% {
+    content: "​i hope you l";
+    content: "​i hope you l"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  93.7081659973%, 93.9749036145% {
+    content: "​i hope you ";
+    content: "​i hope you "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  93.9759036145%, 94.2426412316% {
+    content: "​i hope you";
+    content: "​i hope you"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  94.2436412316%, 94.5103788487% {
+    content: "​i hope yo";
+    content: "​i hope yo"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  94.5113788487%, 94.7781164659% {
+    content: "​i hope y";
+    content: "​i hope y"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  94.7791164659%, 95.045854083% {
+    content: "​i hope ";
+    content: "​i hope "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  95.046854083%, 95.3135917001% {
+    content: "​i hope";
+    content: "​i hope"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  95.3145917001%, 95.5813293173% {
+    content: "​i hop";
+    content: "​i hop"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  95.5823293173%, 95.8490669344% {
+    content: "​i ho";
+    content: "​i ho"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  95.8500669344%, 96.1168045515% {
+    content: "​i h";
+    content: "​i h"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  96.1178045515%, 96.3845421687% {
+    content: "​i ";
+    content: "​i "/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  96.3855421687%, 96.6522797858% {
+    content: "​i";
+    content: "​i"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+  96.6532797858%, 100% {
+    content: "​";
+    content: "​"/"hello hello hello, i'm vani sachdev.";
+    alt: "hello hello hello, i'm vani sachdev.";
+  }
+}
+@-webkit-keyframes typed-0-caret {
+  75% {
+    border-color: transparent;
+  }
+}
+@keyframes typed-0-caret {
+  75% {
+    border-color: transparent;
+  }
+}
+.input-wrapper > input:focus + .placeholder, .input-wrapper > input:active + .placeholder {
+  display: none;
+}
