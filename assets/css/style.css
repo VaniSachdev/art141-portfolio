@@ -1,0 +1,33 @@
+
+div {
+    margin-left: 1%;
+
+}
+
+div.gallery {
+    padding: 2%;
+    margin-top: auto;
+    margin-right: auto;
+    margin: 5px;
+    border: 1px solid rgb(255, 255, 255);
+    float: left;
+    width: 32% ;
+  }
+  
+  div.gallery:hover {
+    /* border: 1px solid #777; */
+    width: 33%;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    font-family: monospace;
+    padding: 15px;
+    text-align: center;
+    text-overflow: ellipsis;
+  }
+  
